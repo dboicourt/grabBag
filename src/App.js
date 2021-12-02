@@ -3,6 +3,7 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import Draggable from "react-draggable";
 
 function App() {
   var test = {
@@ -19,16 +20,22 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+          <ImageList
+            sx={{ width: 1000, height: 1000 }}
+            cols={3}
+            rowHeight={164}
+          >
             {itemData.map((item) => (
-              <ImageListItem key={item.img}>
-                <img
-                  src={`${item.img}`}
-                  srcSet={`${item.img}`}
-                  alt={item.title}
-                  loading="lazy"
-                />
-              </ImageListItem>
+              <Draggable>
+                <ImageListItem key={item.img}>
+                  <img
+                    src={`${item.img}`}
+                    srcSet={`${item.img}`}
+                    alt={item.title}
+                    loading="lazy"
+                  />
+                </ImageListItem>
+              </Draggable>
             ))}
           </ImageList>
         </p>
