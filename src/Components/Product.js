@@ -3,12 +3,16 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 class Product extends React.Component {
   render() {
+    const productImg = this.props.product.image.thumbnail;
+    const productKey = this.props.product.wikiid;
+    const productName = this.props.product.title;
+
     return (
-      <ImageListItem key={this.props.item.img}>
+      <ImageListItem key={productKey}>
         <img
-          src={`${this.props.item.img}`}
-          srcSet={`${this.props.item.img}`}
-          alt={this.props.item.title}
+          src={`${productImg}`}
+          srcSet={`${productImg}`}
+          alt={productName}
           loading="lazy"
         />
       </ImageListItem>
