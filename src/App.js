@@ -8,11 +8,22 @@ import { ImageListItemBar } from "@mui/material";
 import ImageGrid from "./Components/ImageGrid";
 
 function App() {
+  var test = {
+    img: "https://guide-images.cdn.ifixit.com/igi/3hZaEUfW2hoBbWcF.medium",
+  };
+  var test2 = {
+    img: "https://guide-images.cdn.ifixit.com/igi/3hZaEUfW2hoBbWcF.medium",
+  };
+  var test3 = {
+    img: "https://guide-images.cdn.ifixit.com/igi/3hZaEUfW2hoBbWcF.medium",
+  };
+  var itemData = [test, test2, test3];
+
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          <ImageGrid></ImageGrid>
+          <ImageGrid products={itemData}></ImageGrid>
         </p>
       </header>
     </div>
