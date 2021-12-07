@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App-body {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -21,11 +21,17 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #0071ce;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.App-dropZone {
+  color: #0071ce;
+  background-color: #0071ce;
+  display: inline-block;
 }
 
 @keyframes App-logo-spin {

@@ -1,15 +1,20 @@
 import "./App.css";
 import * as React from "react";
 import InfiniteScroll from "./Components/InfiniteScroll";
+import DropZone from "./Components/DropZone";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
+      <body className="App-body">
+        <div>
+          <div>
+            <p>GearBag</p>
+          </div>
+          <DropZone></DropZone>
           <InfiniteScroll></InfiniteScroll>
-        </p>
-      </header>
+        </div>
+      </body>
     </div>
   );
 }
