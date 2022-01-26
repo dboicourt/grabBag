@@ -17,7 +17,7 @@ class InfiniteScroll extends React.Component {
     this.setState({ loading: true });
     axios
       .get(
-        `https://www.ifixit.com/api/2.0/wikis/CATEGORY?offset=${last}&limit=50`
+        "https://fakestoreapi.com/products?limit=5"
       )
       .then((res) => {
         this.setState({ items: [...this.state.items, ...res.data] });

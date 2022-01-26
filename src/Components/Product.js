@@ -3,7 +3,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 class Product extends React.Component {
   render() {
-    const productImg = this.props.product.image.thumbnail;
+    const productImg = this.props.product.image;
     const productKey = this.props.product.wikiid;
     const productName = this.props.product.title;
 

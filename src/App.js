@@ -6,10 +6,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
+      </header>
+      <body className="App-body">
+      <p>
           <InfiniteScroll></InfiniteScroll>
         </p>
-      </header>
+      </body>
     </div>
   );
 }
