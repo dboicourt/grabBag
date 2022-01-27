@@ -13,11 +13,11 @@ class InfiniteScroll extends React.Component {
     };
   }
 
-  getItems(last) {
+  getItems(itemCount) {
     this.setState({ loading: true });
     axios
       .get(
-        "https://fakestoreapi.com/products?limit=5"
+        `https://fakestoreapi.com/products?limit=${itemCount}`
       )
       .then((res) => {
         this.setState({ items: [...this.state.items, ...res.data] });
@@ -29,7 +29,7 @@ class InfiniteScroll extends React.Component {
     const y = entities[0].boundingClientRect.y;
     if (this.state.prevY) {
       const lastItem = this.state.items.length - 1;
-      this.getItems(lastItem);
+      this.getItems(lastItem + 5);
       this.setState({ offset: lastItem });
     }
     this.setState({ prevY: y });
