@@ -29,8 +29,8 @@ class InfiniteScroll extends React.Component {
     const y = entities[0].boundingClientRect.y;
     if (this.state.prevY) {
       const lastItem = this.state.items.length - 1;
-      this.getItems(lastItem + 5);
-      this.setState({ offset: lastItem });
+      this.getItems(lastItem + 3);
+      this.setState({ offset: lastItem});
     }
     this.setState({ prevY: y });
   }

@@ -10,8 +10,8 @@ class Product extends React.Component {
     return (
       <ImageListItem key={productKey}>
         <img
-          src={`${productImg}`}
-          srcSet={`${productImg}`}
+          src={`${productImg}?w=300&h=300&fit=crop&auto=format`}
+          srcSet={`${productImg}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
           alt={productName}
           loading="lazy"
         />
