@@ -1,5 +1,5 @@
 import * as React from "react";
-import ImageListItem from "@mui/material/ImageListItem";
+import {ImageListItem, ImageListItemBar} from "@mui/material";
 
 class Product extends React.Component {
   render() {
@@ -15,6 +15,7 @@ class Product extends React.Component {
           alt={productName}
           loading="lazy"
         />
+        <ImageListItemBar position="bottom" title={productName} />
       </ImageListItem>
     );
   }
