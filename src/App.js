@@ -5,10 +5,9 @@ import InfiniteScroll from "./Components/InfiniteScroll";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <header className="App-header">TestLogo</header>
       <body className="App-body">
-      <p>
+        <p>
           <InfiniteScroll></InfiniteScroll>
         </p>
       </body>

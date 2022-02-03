@@ -10,6 +10,18 @@
   pointer-events: none;
 }
 
+.App-header {
+  background-color: #3d22b6;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  line-height: 65px;
+  border-radius: 2px;
+  padding: 10 px;
+}
+
 .App-body {
   background-color: #282c34;
   position: relative;
